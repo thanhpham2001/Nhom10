@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"thhtn\startup_stm32f103xb.o"
+"thhtn\main.o"
+"thhtn\stm32f1xx_it.o"
+"thhtn\stm32f1xx_hal_msp.o"
+"thhtn\i2c-lcd.o"
+"thhtn\stm32f1xx_hal_gpio_ex.o"
+"thhtn\stm32f1xx_hal_i2c.o"
+"thhtn\stm32f1xx_hal.o"
+"thhtn\stm32f1xx_hal_rcc.o"
+"thhtn\stm32f1xx_hal_rcc_ex.o"
+"thhtn\stm32f1xx_hal_gpio.o"
+"thhtn\stm32f1xx_hal_dma.o"
+"thhtn\stm32f1xx_hal_cortex.o"
+"thhtn\stm32f1xx_hal_pwr.o"
+"thhtn\stm32f1xx_hal_flash.o"
+"thhtn\stm32f1xx_hal_flash_ex.o"
+"thhtn\stm32f1xx_hal_exti.o"
+"thhtn\stm32f1xx_hal_tim.o"
+"thhtn\stm32f1xx_hal_tim_ex.o"
+"thhtn\system_stm32f1xx.o"
+--strict --scatter "THHTN\THHTN.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "THHTN.map" -o THHTN\THHTN.axf
